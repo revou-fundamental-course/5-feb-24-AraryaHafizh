@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Temperature Calculator</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script src="js/script.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <p>
+        Masukkan suhu derajat Celcius (°C) ke kotak dibawah, lalu klik tombol
+        konversi untuk menadapatkan hasil dalam bentuk Fahrenheit (°F)
+      </p>
+      <div class="forms">
+        <p>Celcius (°C):</p>
+        <textarea
+          id="celciusValue"
+          name="celcius"
+          placeholder="Enter Temp in Celcius (°C)"
+          rows="5"
+          cols="40"
+          maxlength="180"
+        ></textarea>
+        <p>Fahrenheit (°F):</p>
+        <textarea
+          id="fahrenheitValue"
+          name="fahrenheit"
+          placeholder="Temp in Fahrenheit (°F)"
+          rows="5"
+          cols="40"
+          maxlength="180"
+          readonly
+        ></textarea>
+        <p>Cara Kalkulasi:</p>
+        <textarea
+          id="outputValue"
+          name="output"
+          placeholder="Formula will show up here"
+          rows="5"
+          cols="40"
+          maxlength="180"
+          readonly
+        ></textarea>
+        <div class="buttons">
+          <button type="button" class="btn btn-primary" onclick="convertIt()">
+            Konversi
+          </button>
+          <button type="button" class="btn btn-primary" onclick="resetIt()">
+            Reset
+          </button>
+          <button type="button" class="btn btn-primary" onclick="reverseIt()">
+            Reverse
+          </button>
+        </div>
+      </div>
+
+      <h2>Cara Konversi Dari Celcius (°C) ke Fahrenheit (°F)</h2>
+      <p>
+        Suhu 𝑺 dalam derajat Fahrenheit (°F) sama dengan suhu 𝑺 dalam derajat
+        Celsius (°C) kali 9/5 tambah 32.<br /><br />
+        <span class="mathFormula">𝑺(°F) = (𝑺(°C) × 9/5) + 32</span><br /><br />
+        atau<br /><br />
+        <span class="mathFormula">𝑺(°F) = (𝑺(°C) × 1.8) + 32</span>
+      </p>
+    </div>
+  </body>
+</html>
